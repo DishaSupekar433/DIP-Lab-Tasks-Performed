@@ -1,0 +1,22 @@
+im1=imread("C:\Users\DISHA\OneDrive\Desktop\DIP\Images\butterfly.png");
+im=rgb2gray(im1);
+subplot(3,2,1);
+imshow(im1);
+title('Original image');
+add_ = imadd(im, 20);
+subplot(3,2,2);
+imshow(add_);
+title('Added image');
+sub_ = imsubtract(im, 20);
+subplot(3,2,3);
+imshow(sub_);
+title('Subtracted image');
+mul_ = immultiply(im, 1.7);
+subplot(3,2,4);
+imshow(mul_);
+title('Multiplied image');
+div_ = imdivide(im, 1.7);
+subplot(3,2,5);
+imshow(div_);
+title('Divided image');
+
